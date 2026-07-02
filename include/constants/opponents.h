@@ -859,13 +859,24 @@
 #define TRAINER_LEAF                        852
 #define TRAINER_BRENDAN_PLACEHOLDER         853
 #define TRAINER_MAY_PLACEHOLDER             854
+#define TRAINER_ROWAN                       855
+#define TRAINER_MIRA                        856
+#define TRAINER_JAX                         857
+#define TRAINER_ELARA                       858
+#define TRAINER_TOBIN                       859
+#define TRAINER_KAELA                       860
+#define TRAINER_RIME                        861
+#define TRAINER_SORREL                      862
+#define TRAINER_BRANNIK                     863
+#define TRAINER_ELOWEN                      864
+#define TRAINER_TARIN                       865
 
 // NOTE: Because each Trainer uses a flag to determine when they are defeated, there is only space for 9 additional trainers before trainer flag space overflows
 //       More space can be made by shifting flags around in constants/flags.h or changing how trainer flags are handled
 //       MAX_TRAINERS_COUNT can be increased but will take up additional saveblock space
 
-#define TRAINERS_COUNT_EMERALD     855
-#define MAX_TRAINERS_COUNT_EMERALD 864
+#define TRAINERS_COUNT_EMERALD     866 //Changed from 855; TRAINERS_COUNT_EMERALD = last trainer ID + 1
+#define MAX_TRAINERS_COUNT_EMERALD 964 //Changed from 864
 
 #if IS_FRLG
 #define TRAINERS_COUNT                      TRAINERS_COUNT_FRLG
