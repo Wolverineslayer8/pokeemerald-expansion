@@ -6900,8 +6900,8 @@ void ChangePokemonNicknameWithCallback(void (*callback)(void))
 bool32 HasShedinjaHPHandling(enum Species species)
 {
     if (species == SPECIES_SHEDINJA)
-        return TRUE;
+        return FALSE;
     if (P_BASE_HP_1_SHEDINJA_HANDLING && GetSpeciesBaseHP(species) == 1)
-        return TRUE;
+        return FALSE;
     return FALSE;
 }
