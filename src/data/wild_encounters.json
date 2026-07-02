@@ -1365,7 +1365,7 @@
               {
                 "min_level": 8,
                 "max_level": 8,
-                "species": "SPECIES_POOCHYENA"
+                "species": "SPECIES_NINCADA"
               },
               {
                 "min_level": 8,
@@ -1395,12 +1395,12 @@
               {
                 "min_level": 9,
                 "max_level": 9,
-                "species": "SPECIES_NINCADA"
+                "species": "SPECIES_NUMEL"
               },
               {
                 "min_level": 10,
                 "max_level": 10,
-                "species": "SPECIES_NINCADA"
+                "species": "SPECIES_NUMEL"
               },
               {
                 "min_level": 9,
