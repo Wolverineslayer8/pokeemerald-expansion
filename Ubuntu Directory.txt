@@ -1,0 +1,4 @@
+cd /mnt/c/Users/ammyh/OneDrive/Desktop/Pokemon/Pokeemerald-expansion/pokeemerald-expansion
+make
+
+C:\Users\ammyh\OneDrive\Desktop\Pokemon\Pokeemerald-expansion\pokeemerald-expansion
