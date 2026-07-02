@@ -1,0 +1,113 @@
+raw `
+GraniteCave_B1F_MapScripts::
+	map_script MAP_SCRIPT_ON_FRAME_TABLE, CaveHole_CheckFallDownHole
+	map_script MAP_SCRIPT_ON_TRANSITION, CaveHole_FixCrackedGround
+	map_script MAP_SCRIPT_ON_RESUME, GraniteCave_B1F_SetHoleWarp
+	.byte 0
+
+GraniteCave_B1F_SetHoleWarp:
+	setstepcallback STEP_CB_CRACKED_FLOOR
+	setholewarp MAP_GRANITE_CAVE_B2F
+	end
+
+`
+
+script GraniteCave_EventScript_Rowan{
+    trainerbattle_single(TRAINER_ROWAN, Rowan_Intro, Rowan_Outro)
+    msgbox(PostBattle_Rowan, MSGBOX_AUTOCLOSE)
+    waitmessage
+    end
+
+}
+
+text Rowan_Intro{
+    format("Check out this Pokemon I just caught! It's tough as nails!")
+}
+
+text Rowan_Outro{
+    format("Oh, well. Guess I need to actually train it, right?")
+}
+
+text PostBattle_Rowan{
+    format("I can't wait to see what this little guy evolves into!")
+}
+
+script GraniteCave_EventScript_Mira{
+    trainerbattle_single(TRAINER_MIRA, Mira_Intro, Mira_Outro)
+    msgbox(PostBattle_Mira, MSGBOX_AUTOCLOSE)
+    waitmessage
+    end
+
+}
+
+text Mira_Intro{
+    format("My Pokemon and I are one. I don't need to see to fight in this cave!")
+}
+
+text Mira_Outro{
+    format("I need to work harder on honing my other senses...")
+}
+
+text PostBattle_Mira{
+    format("I'll keep working hard!")
+}
+
+script GraniteCave_EventScript_Jax{
+    trainerbattle_single(TRAINER_JAX, Jax_Intro, Jax_Outro)
+    msgbox(PostBattle_Jax, MSGBOX_AUTOCLOSE)
+    waitmessage
+    end
+
+}
+
+text Jax_Intro{
+    format("I can't see a dang thing!")
+}
+
+text Jax_Outro{
+    format("Wait, did I lose? I couldn't see!")
+}
+
+text PostBattle_Jax{
+    format("Next time, I need to bring a lantern.")
+}
+
+script GraniteCave_EventScript_Elara{
+    trainerbattle_single(TRAINER_ELARA, Elara_Intro, Elara_Outro)
+    msgbox(PostBattle_Elara, MSGBOX_AUTOCLOSE)
+    waitmessage
+    end
+
+}
+
+text Elara_Intro{
+    format("Hummmmm...")
+}
+
+text Elara_Outro{
+    format("Oh no, I broke my meditation!")
+}
+
+text PostBattle_Elara{
+    format("Hummm...")
+}
+
+script GraniteCave_EventScript_Tobin{
+    trainerbattle_single(TRAINER_TOBIN, Tobin_Intro, Tobin_Outro)
+    msgbox(PostBattle_Tobin, MSGBOX_AUTOCLOSE)
+    waitmessage
+    end
+
+}
+
+text Tobin_Intro{
+    format("I feel a cold draft coming from the stairs. Good thing my pokemon are here to keep me warm!")
+}
+
+text Tobin_Outro{
+    format("You're really strong! You shouldn't have any problems ahead.")
+}
+
+text PostBattle_Tobin{
+    format("Feel free to keep warm by my Slugma before moving on!")
+}

@@ -1,0 +1,125 @@
+raw `
+GraniteCave_B2F_MapScripts::
+	.byte 0
+
+`
+
+script GraniteCave_EventScript_Rime{
+    trainerbattle_single(TRAINER_RIME, Rime_Intro, Rime_Outro)
+    msgbox(PostBattle_Rime, MSGBOX_AUTOCLOSE)
+    waitmessage
+    end
+
+}
+
+text Rime_Intro{
+    format("Brr, it's freezing down here!")
+}
+
+text Rime_Outro{
+    format("I need to get more used to the cold!")
+}
+
+text PostBattle_Rime{
+    format("I would build a campfire down here to keep warm, but I don't think the ice-type Pokemon would like it very much.")
+}
+
+script GraniteCave_EventScript_Sorrel{
+    trainerbattle_single(TRAINER_SORREL, Sorrel_Intro, Sorrel_Outro)
+    msgbox(PostBattle_Sorrel, MSGBOX_AUTOCLOSE)
+    waitmessage
+    end
+
+}
+
+text Sorrel_Intro{
+    format("How do you think this place came to be?")
+}
+
+text Sorrel_Outro{
+    format("Ah, you got me!")
+}
+
+text PostBattle_Sorrel{
+    format("Maybe the bottom floor of this cave is cold because all the cold air flows downward and collects here?")
+}
+
+script GraniteCave_EventScript_Brannik{
+    trainerbattle_single(TRAINER_BRANNIK, Brannik_Intro, Brannik_Outro)
+    msgbox(PostBattle_Brannik, MSGBOX_AUTOCLOSE)
+    waitmessage
+    end
+
+}
+
+text Brannik_Intro{
+    format("Woah, I can see my own breath. Look!")
+}
+
+text Brannik_Outro{
+    format("Dang, you caught me off guard!")
+}
+
+text PostBattle_Brannik{
+    format("If I lick that rock over there, do you think my tongue will stick to it?")
+}
+
+script GraniteCave_EventScript_Tarin{
+    trainerbattle_single(TRAINER_TARIN, Tarin_Intro, Tarin_Outro)
+    msgbox(PostBattle_Tarin, MSGBOX_AUTOCLOSE)
+    waitmessage
+    end
+
+}
+
+text Tarin_Intro{
+    format("With how cold it is down here, it's the perfect place to train these muscles!")
+}
+
+text Tarin_Outro{
+    format("Oh no, leg cramp!")
+}
+
+text PostBattle_Tarin{
+    format("You know, coming down here without shoes was a really bad idea.")
+}
+
+script GraniteCave_EventScript_Elowen{
+    trainerbattle_single(TRAINER_ELOWEN, Elowen_Intro, Elowen_Outro)
+    msgbox(PostBattle_Elowen, MSGBOX_AUTOCLOSE)
+    waitmessage
+    end
+
+}
+
+text Elowen_Intro{
+    format("Do you think you can take on both of us?")
+}
+
+text Elowen_Outro{
+    format("We lost! How embarassing!")
+}
+
+text PostBattle_Elowen{
+    format("That meathead across from me got in my way. You got lucky.")
+}
+
+script GraniteCave_EventScript_Kaela{
+    trainerbattle_single(TRAINER_KAELA, Kaela_Intro, Kaela_Outro)
+    msgbox(PostBattle_Kaela, MSGBOX_AUTOCLOSE)
+    waitmessage
+    end
+
+}
+
+text Kaela_Intro{
+    format("Look at my cute icy Pokemon!")
+}
+
+text Kaela_Outro{
+    format("Aww, my cute pokemon!")
+}
+
+text PostBattle_Kaela{
+    format("You could've gone a bit easier on me. Ice types aren't know for being the best type, you know.")
+}
